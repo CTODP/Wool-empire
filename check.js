@@ -1,6 +1,6 @@
 const Koa = require('koa')
-const wechart=require('./wechart-lib/middleware.js')
-const config = require('./config/config.js')
+const wechart=require('./wechart-lib/middleware')
+const config = require('./config/config')
 const app = new Koa()
 app.use(wechart(config.wechat))
 app.listen(9999)
